@@ -14,7 +14,7 @@ export default async function HomePage() {
 
   return (
     <main className="flex items-center justify-center min-h-screen bg-gray-50">
-      <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-lg">
+      <div className="w-full max-w-lg p-8 space-y-8 bg-white rounded-lg shadow-lg mx-4">
         <div>
           <h1 className="text-3xl font-bold text-center text-gray-800">PsyColorZ</h1>
           <p className="text-center text-gray-500">What color is your mind today?</p>

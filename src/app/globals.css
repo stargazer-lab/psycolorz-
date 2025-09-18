@@ -5,3 +5,79 @@
   background-color: #e0f2fe; /* 薄い青色 */
   border-radius: 50%;
 }
+/* カレンダーのサイズと余白を調整 */
+.react-calendar {
+  width: 100%; /* 親要素の幅いっぱいに広げる */
+  max-width: 400px; /* PCでの最大幅 */
+  border: none; /* デフォルトの枠線をなくす */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  margin: 0 auto; /* 中央寄せ */
+  background-color: transparent; /* 背景透明 */
+}
+
+/* カレンダーの各日付セルの高さ調整 */
+.react-calendar__tile {
+  height: 48px; /* 各日付セルの高さを固定 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* デフォルトのパディングをなくす */
+}
+
+/* カレンダーの選択可能な日付のホバー時のスタイル */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e0f2fe; /* ホバー時に薄い青 */
+  border-radius: 50%;
+}
+
+/* 記録がある日付のスタイル */
+.recorded-day {
+  background-color: #90cdf4 !important; /* 目立つ青色 (上書きのため!important) */
+  color: white; /* 文字色を白に */
+  border-radius: 50%; /* 丸くする */
+  font-weight: bold;
+}
+
+/* 記録がある日付のホバー時のスタイル */
+.recorded-day:enabled:hover,
+.recorded-day:enabled:focus {
+  background-color: #63b3ed !important; /* ホバー時にもっと濃い青 */
+}
+
+/* 現在の月以外の日の文字色を薄くする */
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: #a0aec0 !important; /* グレー */
+}
+
+/* 日付のナビゲーション（月、年）の文字サイズと色 */
+.react-calendar__navigation button {
+    font-size: 1.2em;
+    color: #4a5568;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: transparent;
+}
+
+/* 曜日のヘッダー（月火水木金土日）の文字色 */
+.react-calendar__month-view__weekdays abbr {
+  color: #718096;
+  text-decoration: none; /* デフォルトの下線をなくす */
+}
+
+/* activeな日付（今日の日付など）のスタイルを上書き */
+.react-calendar__tile--active {
+  background-color: #2b6cb0 !important; /* 濃い青 */
+  color: white !important;
+  border-radius: 50%;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: #2c5282 !important;
+}
+.recorded-day {
+  background-color: #e0f2fe; /* 薄い青色 */
+  border-radius: 50%;
+}
